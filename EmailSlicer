@@ -1,6 +1,10 @@
-email = input("Enter Your Email: ").strip()
+email = input("Email Address: ").strip()
 
-username = email[:email.index('@')]
-domain = email[email.index('@') + 1:]
+index = email.index('@')
 
-print(f"Your username is {username} & domain is {domain}")
+username = email[:index]
+domain = email[index+1:]
+
+print("\nEmail address: ", email)
+print("Username: ", username)
+print("Domain name: ", domain)
